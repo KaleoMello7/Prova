@@ -1,46 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Avaliação</title>
-</head>
-<body>
-<!- Coloque um fundo gradiente background-image: linear-gradient( to right, red, green, yellow, blue ); ->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="avaliacaostyle.css" />
+    <title>Avaliação</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="textHeader">Avaliação</h1>
+    </header>
 
-<h1>Digite aqui o seu nome</h1>
-<!- Centralize, mude a cor do fundo e cor das letras, mude a fonte ->
+    <main>
+      <div class="name">
+        <label for="name" class="description">Digite seu nome: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Digite seu nome"
+        />
+      </div>
+      <!-- <!- Centralize, mude a cor do fundo e cor das letras, mude a fonte -> -->
 
-<h2>Gosto de</h2>
-<!- Mude a cor de fundo, coloque em itálico, alinhado a direita e uma borda >
+      <div class="gostos">
+        <label for="gostos" class="description"
+          >Digite 5 coisas que você gosta.</label
+        >
+        <br />
+        <textarea
+          name="gostos"
+          id="gostos"
+          cols="40"
+          rows="20"
+          placeholder="Digite 5 coisas que você gosta"
+        ></textarea>
+      </div>
+      <!-- <!- Mude a cor de fundo, coloque em itálico, alinhado a direita e uma borda > -->
 
-<ol> <!- digite aqui 5 coisas que gosta>
-	<li>item 1</li>
-	<li>item 2</li>
-	<li>item 3</li>
-	<li>item 4</li>
-	<li>item 5</li>
-</ol>
+      <div class="naogostos">
+        <label for="naogostos" class="description"
+          >Digite 5 coisas que você gosta.</label
+        >
+        <br />
+        <textarea
+          name="naogostos"
+          id="naogostos"
+          cols="40"
+          rows="20"
+          placeholder="Digite 5 coisas que você não gosta"
+        ></textarea>
+      </div>
 
-<h2>Não gosto de</h2>
-<!- Mude a cor de fundo, coloque em maiúsculo, alinhado a esquerda e uma borda ->
-
-<ol> <!- digite aqui 5 coisas que não gosta ->
-	<li>item 1</li>
-	<li>item 2</li>
-	<li>item 3</li>
-	<li>item 4</li>
-	<li>item 5</li>
-</ol>
-
-<h3>Informações pessoais</h3>
-<!- Mude a fonte, coloque um fundo diferente, negrito, sublinhado ->
-
-<p>Digite aqui seu endereço</p>
-<p>Digite aqui a cidade</p>
-<p>Digite aqui o estado</p>
-<p>Digite aqui a data de nascimento</p>
-<!- Mude o tipo da fonte, tamanho, espaçamento entre as fontes ->
-
-</body>
+      <div class="inf">
+        <label for="inf" class="name" class="description"
+          >Informações pessoais:
+        </label>
+        <br />
+        <!-- <!- Mude a fonte, coloque um fundo diferente, negrito, sublinhado -> -->
+        <label for="endereco" class="description"
+          >Digite aqui seu endereço:
+        </label>
+        <input type="text" name="endereco" id="endereco" />
+        <br />
+        <label for="city" class="description"
+          >Digite aqui o nome de sua Cidade:
+        </label>
+        <input type="text" name="city" id="city" />
+        <br />
+        <label for="states" class="description"
+          >Digite aqui seu endereço:
+        </label>
+        <input type="text" name="states" id="states" />
+        <br />
+        <label for="birthday" class="description">Data de nascimento: </label>
+        <input type="date" name="birthday" id="birthday" required />
+        <!-- <!- Mude o tipo da fonte, tamanho, espaçamento entre as fontes -> -->
+      </div>
+    </main>
+  </body>
 </html>
