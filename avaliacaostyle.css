@@ -18,14 +18,32 @@ body {
 .gostos {
   font-size: 2em;
   margin: 1em;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  float: left;
 }
 
 .naogostos {
   font-size: 2em;
   margin: 1em;
+  text-align: right;
+  font-style: italic;
+  float: right;
 }
 
 .inf {
   font-size: 2em;
   margin: 1em;
+}
+
+.inf {
+  font-family: monospace;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: aqua;
+}
+
+.textarea {
+  background-color: aqua;
+  border: 2px solid black;
 }
